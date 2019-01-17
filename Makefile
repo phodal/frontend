@@ -1,6 +1,6 @@
 include_dir=build
 source=chapters/*.md
-title='电子书模板'
+title='大前端：前端的扩张'
 filename='ebook'
 
 

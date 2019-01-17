@@ -1,6 +1,6 @@
-# 大前端
+# 大前端：前端的扩张
 
-到底也是没有多少的兴趣，从头到尾去写这么一本电子书。当我在知乎上回答了一个问题：[坚持学前端的你，如今有什么感悟？](https://www.zhihu.com/question/305244724/answer/574098954)，我的答案是：
+当我在知乎上回答了一个问题：[坚持学前端的你，如今有什么感悟？](https://www.zhihu.com/question/305244724/answer/574098954)，我的答案是：
  
 ----------------------------
 
@@ -23,247 +23,74 @@
 
 我是一个程序员，然后才是一个前端。
 
-## 大前端：写给大家看的渐进式前端发展指南
-
-
-
-
-## 为什么会有大前端
-
-### JavaScript 的神奇魔力
-
-易学、广泛使用、熟悉的语法、
-
-### 无处不在的 WebView
-
-## 什么是大前端？？
-
-> 大前端是指通过 Web 开发相关的技术（WebView、JavaScript/TypeScript）所能开发、处理的领域。除了包含传统的 Web 前端相比，大前端还包含了——后端（Node.js 如 BFF 层、Serverless）、HTML 5 游戏、物联网、嵌入式应用、移动应用、桌面应用。它的显著特性是：**一次开发，多种平台**。
-
-值得注意的是：对于某些领域而言，大前端技术并不是最好的技术，但是它是实现起来最快的技术，也因此特别适合于 **MVP 原型构建**。与此同时，前端技术的动态特性，特别适合于远程更新业务——只需要更新对应的代码，而不需要更新整个应用。
-
-若是就这样领域，在前端里，我们可以分为多个领域。
-
-### 大前端的技术领域
-
-#### 前端中的 Web 前端
-
-#### 前端中的 GUI
-
-前端是软件 GUI（图形用户界面）的一种形式。从传统的应用厂商，到互联网应用的迁移，我们便可以看到相关的变化。
-
-#### 前端中的游戏
-
-#### 前端中的物联网（IoT）
-
-#### 前端中的移动端
-
-#### 前端中的 AR/VR
-
-### 选题
-
-**适合对象**：
-
-**简介**：
-
-
-## 如何成为大前端？
-
-# 大前端：前端
-
-前端领域，在 2018 年已经趋于平衡，Angular、Vue、React 都没有出现太大的变化。
-
-## Web 应用
-
-### SPA （单页面应用）框架：A/V/R
-
-架构选型上，也趋势于平衡。该用啥的还是用啥，偶尔还是会出现一些框架切换的新闻。尽管在 2019 年，会出现一些新的框架，但是还不太可能快引起变化。
-
-### MPA （多页面应用）框架
-
-## 语言
-
-### TypeScript
-
-TypeScript 真香。
-
-前端，没什么好看——除了，娱乐新闻。
-
-# 大前端：GUI
-
-## 桌面浏览器
-
-## 移动设备浏览器
-
-## 嵌入式设备浏览器
-
-# 大前端：后端
-
-所谓的前端 in 后端，便是**在后端开发中，使用前端相关的语言和技术栈**。最典型的场景，便是使用 Node.js 开发后端服务。虽然 Node.js 已经有了 10 年的历史了，但是以我（Phodal）的角度来看，我更希望的是使用编译型语言，来开发后端服务。动态语言，无法使用编译器来检测错误，难以约束代码变动。
-
-## Node.js 打造后端服务
-
-从社区的探索来看，存在一些完全使用 Node.js 开发的后台服务。但是，也存在一系列由于代码不规范造成的问题。从社区的经验来看，Node.js + Express + MongoDB + Angular/Vue/React，便是一些不错的选择。当然了，也有相当多的应用，只是采用了 Node.js 来完成 BFF 层（Backend For Frontends）。在这一层业务上，它只做业务数据的中间处理。
-
-虽然，我经常建议在一些关键的节点上，不要采用 Node.js 来打造后台服务。可一旦涉及到 SPA 的服务端渲染，我们就不得不使用 Express、Koa 等这样的服务端 JavaScript/TypeScript 框架，来解决这样的问题。
-
-## Serverless
-
-> Serverless 架构是指大量依赖第三方服务（也叫做后端即服务，即“BaaS”）或暂存容器中运行的自定义代码（函数即服务，即“FaaS”）的应用程序，函数是无服务器架构中抽象语言运行时的最小单位。在这种架构中，我们并不看重运行一个函数需要多少 CPU 或 RAM 或任何其他资源，而是更看重运行函数所需的时间，我们也只为这些函数的运行时间付费。[^serverless]
-
-[^serverless]: [https://serverless.ink/](https://serverless.ink/)
-
-作为一种折中方案，也是我最喜欢的方案。Serverless 架构是指大量依赖第三方服务（也叫做后端即服务，即“BaaS”）或暂存容器中运行的自定义代码（函数即服务，即“FaaS”）的应用程序，函数是无服务器架构中抽象语言运行时的最小单位。
-
-对于没有后台经验的前端开发人员来说，使用 Node.js 开发后端应用是一种相当大的挑战。大多数非科班的前端程序员，不知道从数据库到 RESTful API 的一系列操作，并且还需要了解到部署等一系列的系统底层知识。因此，使用 Serverless 这种不关心基础设施的技术，可以进一步地降低开发成本。
-
-
-采用 Serverless 架构，也就意味着，我们提取出了大量的基础设施。而使用 Node.js + JavaScript 作为胶水，来快速连接不同的服务，以形成一个快速有效的方案。并且，编写更少的代码，也意味着更安全、快速。
-
-使用 AWS 来运行大量的 Serverless 计算的成本很高，但是自己搭建一个 Serverless 服务器，来运行自己的 Serverless 应用，则变成了一种更廉价的方式。除了直接基于 AWS 的 Serverless Framework 框架的方案，还有 OpenFaaS、Kubeless、OpenWhisk、Fission 等不同的 Serverless 框架。
-
-## BFF 层
-
-> BFF，即 Backends For Frontends (服务于前端的后端)，也就是服务器设计 API 时会考虑客户端的使用情况，在服务端根据不同的设备类型，返回不同客户端所需要的结果。BFF 模式，这种模式不会为所有的客户端创建通用的 API。而是创建多个 BFF 服务：一个用于 Web 前端、一个用于移动客户端（甚至一个用于 iOS，另一个用于 Android）等等。[^aofe]
-
-[^aofe]: 前端架构：从入门到微前端
-
-# 大前端：游戏
-
-随着移动端的性能不断变好，在 2019 年，我开始看好使用 HTML 5 技术来开发一些游戏。当然了，主要原因还是微信小游戏的出现。但是，不管怎样，我开始尝试在这个领域的探索。
-
-## WebView 游戏
-
-## JavaScript 语言游戏
-
-# 大前端：IoT
-
-Web 应用的架构相比于一个物联网系统，无非就是多了一层硬件层以及可选的协调层。
-
-![IoT 层级](./images/iot-layers.png)
-
-
-这个硬件层决定了物联网应用比Web应用更加复杂。对于大部分的Web应用来说 ，客户端都是手机、电脑、平板这些设备，都有着强大的处理能力，不需要考虑一些额外的因素。
-
-对于物联网应用来说，我们需要考虑设备上的MCU的处理能力，根据其处理能力和使用环境使用不同的通信协议，如我们在一些设备上需要使用CoAP协议。在一些设备上不具备网络功能，需要考虑借助于可以联网的协助层，并且还需要使用一些短距离的无线传输协议，如低功耗蓝牙、红外、Zigbee等等。
-
-## 传统的物联网
-
-我毕业的时候，选定的毕业论文是一篇关于物联网的论文——《基于 REST 服务的最小物联网系统设计》。它是一篇入门级的论文，但凡是有 CS 基础的人，再加上一些硬件知识，都能写出这样的论文。不过我们的是毕业设计，论文反而有些其次，毕竟能不能过是以实物为主的。因此毕业设计动不动就要烧个几百 RMB，还不算服务器费用。然而，对于我们这些学习硬件为主的专业来说，就不是如此。
-
-这篇论文是之前参加比赛的作品论文的“最小化”，里面使用到的主要就是创建RESTful服务，而它甚至称不上是一种技术。在这个作品里：
-
- * 我们使用Python语言里的Django框架作为Web服务框架，使用Django REST Framework来创建RESTful服务。
- * 为了使用手机当控制器，我们还要用Java写一个Android应用。
- * 我们使用Raspberry Pi作为硬件端的协调层，用于连接网络，并传输控制信号给硬件。在最初的设计里，因为便宜，我们打算使用运行OpenWRT的路由器来当硬件端的控制器。
- * 我们在硬件端使用Arduino作为控制器，写起代码特别简单，可以让我们关注于业务。
- * 我们还使用了Zigbee模块Xbee及I2C作为连接不同Arduino模块的的介质。
- * 最后，我们还需要在网页上做一个图表来显示实时数据。
-
-所有的这些，我们需要使用Python、Java、JavaScript、C、Arduino五种语言。而如果我们要写相应的iOS应用，我们还需要Objective-C。
-
-而同样的：
-
-我刚实习的时候（2013 年），项目里使用的是 Backbone，作为单页面应用框架的核心来打造 Web 应用。这时，我开始关注于 Node.js，使用它实现物联网应用的可能性。当时，已经有了物联网协议 MQTT 和 CoAP 相关的库，便照猫画虎地写了一个支持 HTTP、CoAP、WebSocket 和 MQTT 的物联网。由于，当时缺乏一些大型应用的开发经典，所以做得并不是很好，但是已经可以看到 JavaScript 在这方面的远景。
-
-一年多后，Ionic 也还没推出正式版，便发现到了这个框架真的很棒——它自带了一系列的 UI 组件，还用 NgCordova 封装了一系列  Cordova 的插件。便开始使用 Ionic 写了一些移动应用，发现还挺顺手的。接着，便拿这个框架尝试写物联网应用，这需要一些原生的插件，如 BLE、MQTT。后来，我也写了一个简单的 CoAP 插件。
-
-后来，我们不再需要编译 Node.js（早期，使用的是 Raspberry Pi 来运行 Node.js），就可以在 ARM 处理器上运行 Node.js。并且我们已经有 Tessel、Espruino、Kinoma Create、Ruff 这些可以直接运行 JavaScript 的开发板。三星还推出 IoT.js，可以让更多的嵌入式设备，直接使用 JavaScript 作为开发语言。
-
-人们开始在硬件上使用 JavaScript 的原因有很多，如 Web 的开发人员是最多的，而 JavaScript 很容易上手。
-
-## 嵌入式设备分类
-
-### 两种前端类型
-
-#### 嵌入式设备作为服务端
-
-诸如 ESP32 或者 ESP8266，它们可以和传统的 Web 应用一样，托管前端应用。
-
-#### 嵌入式设备作为服务端和客户端
-
-如 Android 系统中的
-
-Android Things 相似的还有 Microsoft 10 IoT、Raspberry Pi
-
-### 嵌入式设备分类
-
- - 低资源受限设备，只能使用传统的编译型语言编写，如 C、C++、汇编，
- - 
-
-#### 低资源受限设备：编译型语言
-
-它们只能使用
-
-#### 普通嵌入式设备：
-
-Android 是用得最多的嵌入式系统，。
-
-OpenWRT 是用得最广泛的嵌入式系统之一，
-
-在某些资源受限的设备上，我们无法运行一个带着完整 JavaScript 引擎的 WebView——出于软件体积、运行内存等因素的限制，去除了这些特性。诸如 CSS 3 中的动画特性，会占用大量的运算资源，算去掉了相应的支持。
-
-## 固件编写
-
-### Johnny-Five
-
-### IoT.js
-
-## Be Professinoal
-
-### Arduino 与 Processing
-
-### ESP866/ESP32 与 Lua
-
-### C 语言
-
-# 大前端：移动端
-
-## 混合应用
-
-依我的角度来看，使用什么跨平台框架来看，区别并不是太大。目前主流的方案，仍然是原生（含跨平台框架） + HTML5 应用。从业务的角度上来看待这个问题，那么还是希望，可以用 HTML 5 的地方多——更新功能方便。
-
-也因此，虽然在过去，笔者写过基于 React Native 的混合应用框架 Dore。我相信：Flutter 也会出现这样的混合应用框架。不过，对于有原生开发能力的团队来说，它们的框架还会是三部分：
-
- * 原生功能部分
- * 原生 + H5 的频繁更新部分
- * Fultter 的跨平台部分
-
-写业务嘛，框架都只是工具。
-
-## 跨平台应用
-
-### React Native
-
-### Flutter
-
-### Weex
-
-## 小程序
-
-小程序，即 HTML5 小程序，即无需安装即可下载运行的应用程序。与普通的移动 Web 应用不同的是，**小程序相当于是高阶版的混合应用**。
-
-如果只是从这一点上来看，其实是不是和微信一样的定制型小程序，并不是那么重要。重要的，在于与原生**界面结合，并提供离线使用功能。**它也是小程序与普通的 HTML 应用的区别。
-
-# 大前端：桌面应用
-
-## 跨平台框架
-
-## 跨平台框架
-
-# 大前端：VR/AR
-
-## VR
-
-## AR
-
-# 大前端：数据可视化
-
-在过去我阅读的一些书籍里面，主要是以 Processing 作为可视化的语言——它起始于 2001 年，它最初是面向美术工作者和设计者创建的，后来变成了全面的设计和原型工具，可以用于创建复杂数据可视化领域。
-
-### 高级娄
-
-
-### D3.js
-
-# 前端，永不止境
+## 目录
+
+*   [前言](https://javascript.ren/#%E5%89%8D%E8%A8%80)
+    *   [桌面浏览器](https://javascript.ren/#%E6%A1%8C%E9%9D%A2%E6%B5%8F%E8%A7%88%E5%99%A8)
+    *   [移动设备浏览器](https://javascript.ren/#%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E6%B5%8F%E8%A7%88%E5%99%A8)
+    *   [嵌入式设备浏览器](https://javascript.ren/#%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%AE%BE%E5%A4%87%E6%B5%8F%E8%A7%88%E5%99%A8)
+*   [大前端](https://javascript.ren/#%E5%A4%A7%E5%89%8D%E7%AB%AF)
+    *   [大前端：写给大家看的渐进式前端发展指南](https://javascript.ren/#%E5%A4%A7%E5%89%8D%E7%AB%AF%EF%BC%9A%E5%86%99%E7%BB%99%E5%A4%A7%E5%AE%B6%E7%9C%8B%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8F%E5%89%8D%E7%AB%AF%E5%8F%91%E5%B1%95%E6%8C%87%E5%8D%97)
+    *   [为什么会有大前端](https://javascript.ren/#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E6%9C%89%E5%A4%A7%E5%89%8D%E7%AB%AF)
+        *   [JavaScript 的神奇魔力](https://javascript.ren/#javascript-%E7%9A%84%E7%A5%9E%E5%A5%87%E9%AD%94%E5%8A%9B)
+        *   [无处不在的 WebView](https://javascript.ren/#%E6%97%A0%E5%A4%84%E4%B8%8D%E5%9C%A8%E7%9A%84-webview)
+    *   [什么是大前端？？](https://javascript.ren/#%E4%BB%80%E4%B9%88%E6%98%AF%E5%A4%A7%E5%89%8D%E7%AB%AF%EF%BC%9F%EF%BC%9F)
+        *   [大前端的技术领域](https://javascript.ren/#%E5%A4%A7%E5%89%8D%E7%AB%AF%E7%9A%84%E6%8A%80%E6%9C%AF%E9%A2%86%E5%9F%9F)
+            *   [前端中的 Web 前端](https://javascript.ren/#%E5%89%8D%E7%AB%AF%E4%B8%AD%E7%9A%84-web-%E5%89%8D%E7%AB%AF)
+            *   [前端中的 GUI](https://javascript.ren/#%E5%89%8D%E7%AB%AF%E4%B8%AD%E7%9A%84-gui)
+            *   [前端中的游戏](https://javascript.ren/#%E5%89%8D%E7%AB%AF%E4%B8%AD%E7%9A%84%E6%B8%B8%E6%88%8F)
+            *   [前端中的物联网（IoT）](https://javascript.ren/#%E5%89%8D%E7%AB%AF%E4%B8%AD%E7%9A%84%E7%89%A9%E8%81%94%E7%BD%91%EF%BC%88iot%EF%BC%89)
+            *   [前端中的移动端](https://javascript.ren/#%E5%89%8D%E7%AB%AF%E4%B8%AD%E7%9A%84%E7%A7%BB%E5%8A%A8%E7%AB%AF)
+            *   [前端中的 AR/VR](https://javascript.ren/#%E5%89%8D%E7%AB%AF%E4%B8%AD%E7%9A%84-arvr)
+        *   [选题](https://javascript.ren/#%E9%80%89%E9%A2%98)
+    *   [如何成为大前端？](https://javascript.ren/#%E5%A6%82%E4%BD%95%E6%88%90%E4%B8%BA%E5%A4%A7%E5%89%8D%E7%AB%AF%EF%BC%9F)
+*   [大前端：后端](https://javascript.ren/#%E5%A4%A7%E5%89%8D%E7%AB%AF%EF%BC%9A%E5%90%8E%E7%AB%AF)
+    *   [Node.js 打造后端服务](https://javascript.ren/#nodejs-%E6%89%93%E9%80%A0%E5%90%8E%E7%AB%AF%E6%9C%8D%E5%8A%A1)
+    *   [Serverless](https://javascript.ren/#serverless)
+    *   [BFF 层](https://javascript.ren/#bff-%E5%B1%82)
+*   [大前端：IoT](https://javascript.ren/#%E5%A4%A7%E5%89%8D%E7%AB%AF%EF%BC%9Aiot)
+    *   [传统的物联网](https://javascript.ren/#%E4%BC%A0%E7%BB%9F%E7%9A%84%E7%89%A9%E8%81%94%E7%BD%91)
+    *   [嵌入式设备分类](https://javascript.ren/#%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%AE%BE%E5%A4%87%E5%88%86%E7%B1%BB)
+        *   [两种前端类型](https://javascript.ren/#%E4%B8%A4%E7%A7%8D%E5%89%8D%E7%AB%AF%E7%B1%BB%E5%9E%8B)
+            *   [嵌入式设备作为服务端](https://javascript.ren/#%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%AE%BE%E5%A4%87%E4%BD%9C%E4%B8%BA%E6%9C%8D%E5%8A%A1%E7%AB%AF)
+            *   [嵌入式设备作为服务端和客户端](https://javascript.ren/#%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%AE%BE%E5%A4%87%E4%BD%9C%E4%B8%BA%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%92%8C%E5%AE%A2%E6%88%B7%E7%AB%AF)
+        *   [嵌入式设备分类](https://javascript.ren/#%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%AE%BE%E5%A4%87%E5%88%86%E7%B1%BB-1)
+            *   [低资源受限设备：编译型语言](https://javascript.ren/#%E4%BD%8E%E8%B5%84%E6%BA%90%E5%8F%97%E9%99%90%E8%AE%BE%E5%A4%87%EF%BC%9A%E7%BC%96%E8%AF%91%E5%9E%8B%E8%AF%AD%E8%A8%80)
+            *   [普通嵌入式设备：](https://javascript.ren/#%E6%99%AE%E9%80%9A%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%AE%BE%E5%A4%87%EF%BC%9A)
+    *   [固件编写](https://javascript.ren/#%E5%9B%BA%E4%BB%B6%E7%BC%96%E5%86%99)
+        *   [Johnny-Five](https://javascript.ren/#johnny-five)
+        *   [IoT.js](https://javascript.ren/#iotjs)
+    *   [Be Professinoal](https://javascript.ren/#be-professinoal)
+        *   [Arduino 与 Processing](https://javascript.ren/#arduino-%E4%B8%8E-processing)
+        *   [ESP866/ESP32 与 Lua](https://javascript.ren/#esp866esp32-%E4%B8%8E-lua)
+        *   [C 语言](https://javascript.ren/#c-%E8%AF%AD%E8%A8%80)
+*   [大前端：移动端](https://javascript.ren/#%E5%A4%A7%E5%89%8D%E7%AB%AF%EF%BC%9A%E7%A7%BB%E5%8A%A8%E7%AB%AF)
+    *   [混合应用](https://javascript.ren/#%E6%B7%B7%E5%90%88%E5%BA%94%E7%94%A8)
+    *   [跨平台应用](https://javascript.ren/#%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%BA%94%E7%94%A8)
+        *   [React Native](https://javascript.ren/#react-native)
+        *   [Flutter](https://javascript.ren/#flutter)
+        *   [Weex](https://javascript.ren/#weex)
+    *   [小程序](https://javascript.ren/#%E5%B0%8F%E7%A8%8B%E5%BA%8F)
+*   [大前端：桌面应用](https://javascript.ren/#%E5%A4%A7%E5%89%8D%E7%AB%AF%EF%BC%9A%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8)
+    *   [跨平台 WebView 应用框架](https://javascript.ren/#%E8%B7%A8%E5%B9%B3%E5%8F%B0-webview-%E5%BA%94%E7%94%A8%E6%A1%86%E6%9E%B6)
+    *   [跨平台框架](https://javascript.ren/#%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%A1%86%E6%9E%B6)
+*   [大前端：VR/AR](https://javascript.ren/#%E5%A4%A7%E5%89%8D%E7%AB%AF%EF%BC%9Avrar)
+    *   [VR](https://javascript.ren/#vr)
+    *   [AR](https://javascript.ren/#ar)
+*   [大前端：数据可视化](https://javascript.ren/#%E5%A4%A7%E5%89%8D%E7%AB%AF%EF%BC%9A%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96)
+    *   *   [高级娄](https://javascript.ren/#%E9%AB%98%E7%BA%A7%E5%A8%84)
+        *   [D3.js](https://javascript.ren/#d3js)
+*   [大前端：游戏](https://javascript.ren/#%E5%A4%A7%E5%89%8D%E7%AB%AF%EF%BC%9A%E6%B8%B8%E6%88%8F)
+    *   [WebView 游戏](https://javascript.ren/#webview-%E6%B8%B8%E6%88%8F)
+    *   [JavaScript 语言游戏](https://javascript.ren/#javascript-%E8%AF%AD%E8%A8%80%E6%B8%B8%E6%88%8F)
+*   [大前端：前端](https://javascript.ren/#%E5%A4%A7%E5%89%8D%E7%AB%AF%EF%BC%9A%E5%89%8D%E7%AB%AF)
+    *   [Web 应用](https://javascript.ren/#web-%E5%BA%94%E7%94%A8)
+        *   [SPA （单页面应用）框架：A/V/R](https://javascript.ren/#spa-%EF%BC%88%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8%EF%BC%89%E6%A1%86%E6%9E%B6%EF%BC%9Aavr)
+        *   [MPA （多页面应用）框架](https://javascript.ren/#mpa-%EF%BC%88%E5%A4%9A%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8%EF%BC%89%E6%A1%86%E6%9E%B6)
+    *   [语言](https://javascript.ren/#%E8%AF%AD%E8%A8%80)
+        *   [TypeScript](https://javascript.ren/#typescript)
+*   [前端，永不止境](https://javascript.ren/#%E5%89%8D%E7%AB%AF%EF%BC%8C%E6%B0%B8%E4%B8%8D%E6%AD%A2%E5%A2%83)
+
+## LICENSE
+
+© 2019 [Phodal Huang](https://www.phodal.com/). This code is distributed under the Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 License. See `LICENSE` in this directory.

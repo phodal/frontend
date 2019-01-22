@@ -85,11 +85,11 @@
 </ul></li>
 <li><a href="#大前端">大前端</a><ul>
 <li><a href="#大前端写给大家看的渐进式前端发展指南">大前端：写给大家看的渐进式前端发展指南</a></li>
-<li><a href="#为什么会有大前端">为什么会有大前端</a><ul>
+<li><a href="#为什么是大前端">为什么是大前端</a><ul>
 <li><a href="#javascript-的神奇魔力">JavaScript 的神奇魔力</a></li>
 <li><a href="#无处不在的-webview">无处不在的 WebView</a></li>
 </ul></li>
-<li><a href="#什么是大前端">什么是大前端？？</a><ul>
+<li><a href="#什么是大前端">什么是大前端？？</a></li>
 <li><a href="#大前端的技术领域">大前端的技术领域</a><ul>
 <li><a href="#前端中的-web-前端">前端中的 Web 前端</a></li>
 <li><a href="#前端中的-gui">前端中的 GUI</a></li>
@@ -97,8 +97,6 @@
 <li><a href="#前端中的物联网iot">前端中的物联网（IoT）</a></li>
 <li><a href="#前端中的移动端">前端中的移动端</a></li>
 <li><a href="#前端中的-arvr">前端中的 AR/VR</a></li>
-</ul></li>
-<li><a href="#选题">选题</a></li>
 </ul></li>
 <li><a href="#如何成为大前端">如何成为大前端？</a></li>
 </ul></li>
@@ -168,7 +166,10 @@
 <li><a href="#用户体验设计">用户体验设计</a></li>
 <li><a href="#图形界面设计">图形界面设计</a></li>
 </ul></li>
-<li><a href="#前端永不止境">前端，永不止境</a></li>
+<li><a href="#前端永不止境">前端，永不止境</a><ul>
+<li><a href="#大前端架构">大前端架构</a></li>
+<li><a href="#练习">练习</a></li>
+</ul></li>
 </ul>
 </nav>
 <h1 id="前言">前言</h1>
@@ -180,24 +181,14 @@
 <h2 id="移动设备浏览器">移动设备浏览器</h2>
 <h2 id="嵌入式设备浏览器">嵌入式设备浏览器</h2>
 <h1 id="大前端">大前端</h1>
-<p>到底也是没有多少的兴趣，从头到尾去写这么一本电子书。当我在知乎上回答了一个问题：<a href="https://www.zhihu.com/question/305244724/answer/574098954">坚持学前端的你，如今有什么感悟？</a>，我的答案是：</p>
-<hr />
-<ul>
-<li>2015 年 GET 了 Three.js 和 Oculus，可以开发 VR 应用，于是有了 <a href="https://github.com/phodal/oculus-nodejs-threejs-example">oculus-nodejs-threejs-example</a></li>
-<li>2016 年 GET 了 Cordova，可以开发混合应用，写了开源应用 Ionic 版本的 <a href="https://github.com/phodal/growth-ionic">Growth</a></li>
-<li>2017 年 GET 了 React Native 和原生开发技能，可以开发跨平台应用，于是写了基于 React Native 的混合应用框架 <a href="https://github.com/phodal/dore">Dore</a></li>
-<li>2017 年 GET 了 Serverless，可以快速使用 Node.js 开发后台应用，于是有了 <a href="https://github.com/phodal/serverless">Serverless</a> 系列的应用。</li>
-<li>2018 年 GET 了 Electron，可以写桌面应用了，于是有了自己的 Markdown 编辑器 <a href="https://github.com/phodal/phodit">Phodit</a></li>
-<li>2019 年 GET 了 Canvas，可以写游戏应用了，于是有了 <a href="https://github.com/phodal/milano">Milano</a></li>
-</ul>
-<p>……VR 应用、移动应用、桌面应用、游戏应用、后台应用。</p>
-<p>等等，你说我是个前端，我 TM 还是个前端吗？</p>
-<p>前端，永无止境。</p>
-<hr />
-<p>喔，我好像不是一个前端，我好像是一个大前端。</p>
-<p>我是一个程序员，然后才是一个前端。</p>
+<blockquote>
+<p>大前端是指通过 Web 开发相关的技术（WebView、JavaScript/TypeScript）所能开发、处理的领域。除了包含传统的 Web 前端相比，大前端还包含了——后端（Node.js 如 BFF 层、Serverless）、HTML 5 游戏、物联网、嵌入式应用、移动应用、桌面应用。它的显著特性是：<strong>一次开发，多种平台</strong>。</p>
+</blockquote>
 <h2 id="大前端写给大家看的渐进式前端发展指南">大前端：写给大家看的渐进式前端发展指南</h2>
-<h2 id="为什么会有大前端">为什么会有大前端</h2>
+<h2 id="为什么是大前端">为什么是大前端</h2>
+<p>为什么不是大后端呢？</p>
+<p>前端，即面向用户交互，存在一系列的方式。</p>
+<p>前端在变窄，</p>
 <h3 id="javascript-的神奇魔力">JavaScript 的神奇魔力</h3>
 <p>易学、广泛使用、熟悉的语法、</p>
 <h3 id="无处不在的-webview">无处不在的 WebView</h3>
@@ -207,17 +198,14 @@
 </blockquote>
 <p>值得注意的是：对于某些领域而言，大前端技术并不是最好的技术，但是它是实现起来最快的技术，也因此特别适合于 <strong>MVP 原型构建</strong>。与此同时，前端技术的动态特性，特别适合于远程更新业务——只需要更新对应的代码，而不需要更新整个应用。</p>
 <p>若是就这样领域，在前端里，我们可以分为多个领域。</p>
-<h3 id="大前端的技术领域">大前端的技术领域</h3>
-<h4 id="前端中的-web-前端">前端中的 Web 前端</h4>
-<h4 id="前端中的-gui">前端中的 GUI</h4>
+<h2 id="大前端的技术领域">大前端的技术领域</h2>
+<h3 id="前端中的-web-前端">前端中的 Web 前端</h3>
+<h3 id="前端中的-gui">前端中的 GUI</h3>
 <p>前端是软件 GUI（图形用户界面）的一种形式。从传统的应用厂商，到互联网应用的迁移，我们便可以看到相关的变化。</p>
-<h4 id="前端中的游戏">前端中的游戏</h4>
-<h4 id="前端中的物联网iot">前端中的物联网（IoT）</h4>
-<h4 id="前端中的移动端">前端中的移动端</h4>
-<h4 id="前端中的-arvr">前端中的 AR/VR</h4>
-<h3 id="选题">选题</h3>
-<p><strong>适合对象</strong>：</p>
-<p><strong>简介</strong>：</p>
+<h3 id="前端中的游戏">前端中的游戏</h3>
+<h3 id="前端中的物联网iot">前端中的物联网（IoT）</h3>
+<h3 id="前端中的移动端">前端中的移动端</h3>
+<h3 id="前端中的-arvr">前端中的 AR/VR</h3>
 <h2 id="如何成为大前端">如何成为大前端？</h2>
 <h1 id="大前端后端">大前端：后端</h1>
 <p>所谓的前端 in 后端，便是<strong>在后端开发中，使用前端相关的语言和技术栈</strong>。最典型的场景，便是使用 Node.js 开发后端服务。虽然 Node.js 已经有了 10 年的历史了，但是以我（Phodal）的角度来看，我更希望的是使用编译型语言，来开发后端服务。动态语言，无法使用编译器来检测错误，难以约束代码变动。</p>
@@ -336,6 +324,8 @@
 <h2 id="用户体验设计">用户体验设计</h2>
 <h2 id="图形界面设计">图形界面设计</h2>
 <h1 id="前端永不止境">前端，永不止境</h1>
+<h2 id="大前端架构">大前端架构</h2>
+<h2 id="练习">练习</h2>
 <section class="footnotes">
 <hr />
 <ol>
